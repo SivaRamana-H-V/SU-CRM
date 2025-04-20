@@ -41,7 +41,7 @@ const Footer = () => {
                   href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-primary-600 hover:text-white transition-all duration-200 transform hover:scale-110"
+                  className="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-black-600 hover:text-white transition-all duration-200 transform hover:scale-110"
                   aria-label={social.name}
                 >
                   <span className="sr-only">{social.name}</span>
@@ -59,7 +59,7 @@ const Footer = () => {
                 <li key={item}>
                   <Link
                     to={`/${item.toLowerCase()}`}
-                    className="text-gray-400 hover:text-primary-400 transition-colors duration-200 text-sm"
+                    className="text-gray-400 hover:text-black-400 transition-colors duration-200 text-sm"
                   >
                     {item}
                   </Link>
@@ -76,7 +76,7 @@ const Footer = () => {
                 <li key={item}>
                   <Link
                     to={`/${item.toLowerCase()}`}
-                    className="text-gray-400 hover:text-primary-400 transition-colors duration-200 text-sm"
+                    className="text-gray-400 hover:text-black-400 transition-colors duration-200 text-sm"
                   >
                     {item}
                   </Link>
@@ -98,11 +98,11 @@ const Footer = () => {
                   required
                   placeholder="Your email"
                   aria-label="Email for newsletter"
-                  className="flex-grow bg-gray-800 py-2.5 px-4 rounded-l-md text-sm border border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-white placeholder-gray-500"
+                  className="flex-grow bg-gray-800 py-2.5 px-4 rounded-l-md text-sm border border-gray-700 focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 text-white placeholder-gray-500"
                 />
                 <button
                   type="submit"
-                  className="bg-primary-600 hover:bg-primary-700 py-2.5 px-4 rounded-r-md text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-gray-900"
+                  className="bg-black-600 hover:bg-black-700 py-2.5 px-4 rounded-r-md text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 focus:ring-offset-gray-900"
                   aria-label="Subscribe to newsletter"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

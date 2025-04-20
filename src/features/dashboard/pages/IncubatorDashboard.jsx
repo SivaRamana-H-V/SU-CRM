@@ -21,8 +21,8 @@ import {
   CardHeader,
   CardTitle
 } from '../../../components/ui/Card';
-import Button  from '../../../components/ui/Button';
-import { PieChart as ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, Legend, BarChart, Bar } from 'recharts';
+import Button from '../../../components/ui/Button';
+import { ResponsiveContainer, PieChart as RechartsPieChart, Pie, Cell, LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, Legend, BarChart, Bar } from 'recharts';
 import { cn } from '../../../utils/cn';
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
@@ -185,9 +185,9 @@ const KPICard = (props) => {
 const FeatureCard = (props) => {
   const { title, description, icon: Icon, color, link } = props;
   return (
-    <Card className="h-full transition-all hover:shadow-md hover:border-primary-200">
+    <Card className="h-full transition-all hover:shadow-md hover:border-black-200">
       <CardContent className="p-6">
-        <div className={`w-12 h-12 rounded-lg ${color} flex items-center justify-center mb-4`}>
+        <div className={`mt-3 w-12 h-12 rounded-lg ${color} flex items-center justify-center mb-4`}>
           <Icon className="h-6 w-6" />
         </div>
         <CardTitle className="text-lg mb-2">{title}</CardTitle>
@@ -195,12 +195,12 @@ const FeatureCard = (props) => {
         <Button
           variant="ghost"
           size="sm"
-          className="mt-auto text-primary-600 hover:text-primary-700 p-0 h-auto font-medium"
-          asChild
+          className="mt-auto text-black-600 hover:text-black-700 p-0 h-auto font-medium"
+          onClick={() => window.location.href = link}
         >
-          <a href={link} className="flex items-center">
+          <span className="flex items-center">
             View details <ArrowRight className="ml-1 h-4 w-4" />
-          </a>
+          </span>
         </Button>
       </CardContent>
     </Card>

@@ -6,7 +6,7 @@ export const defaultTheme = THEMES.LIGHT;
 // Theme colors
 export const themeColors = {
   [THEMES.LIGHT]: {
-    primary: {
+    black: {
       50: '#eff6ff',
       100: '#dbeafe',
       200: '#bfdbfe',
@@ -88,7 +88,7 @@ export const themeColors = {
   [THEMES.DARK]: {
     // Dark theme colors (can be customized)
     // This is just a placeholder, you might want to adjust for a proper dark theme
-    primary: {
+    black: {
       50: '#172554',
       100: '#1e3a8a',
       200: '#1e40af',

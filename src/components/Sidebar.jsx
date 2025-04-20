@@ -116,13 +116,13 @@ const NavItem = ({ item, isActive }) => {
       className={cn(
         "flex items-center px-3.5 py-2.5 text-sm font-medium rounded-md mb-1 transition-all group",
         isActive 
-          ? "bg-primary-50 text-primary-700" 
+          ? "bg-black-50 text-black-700" 
           : "text-gray-600 hover:bg-gray-100"
       )}
     >
       <Icon size={20} className={cn(
         "mr-3 flex-shrink-0",
-        isActive ? "text-primary-600" : "text-gray-500 group-hover:text-gray-700"
+        isActive ? "text-black-600" : "text-gray-500 group-hover:text-gray-700"
       )} />
       {item.name}
     </Link>
@@ -175,7 +175,7 @@ const Sidebar = () => {
       
       <div className="p-4 border-t border-gray-200">
         <div className="flex items-center">
-          <div className="h-8 w-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-700 font-medium">
+          <div className="h-8 w-8 rounded-full bg-black-100 flex items-center justify-center text-black-700 font-medium">
             A
           </div>
           <div className="ml-3">

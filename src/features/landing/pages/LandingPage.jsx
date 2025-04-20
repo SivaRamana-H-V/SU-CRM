@@ -20,22 +20,22 @@ const LandingPage = () => {
 
     const features = [
         {
-            icon: <BarChart2 className="h-7 w-7 text-primary-600" />,
+            icon: <BarChart2 className="h-7 w-7 text-black-600" />,
             title: "Advanced Analytics",
             description: "Visualize and track key performance indicators with real-time dashboards and reports."
         },
         {
-            icon: <Users className="h-7 w-7 text-primary-600" />,
+            icon: <Users className="h-7 w-7 text-black-600" />,
             title: "Startup Management",
             description: "Streamline operations for tracking and supporting multiple startups in your portfolio."
         },
         {
-            icon: <Briefcase className="h-7 w-7 text-primary-600" />,
+            icon: <Briefcase className="h-7 w-7 text-black-600" />,
             title: "Resource Allocation",
             description: "Efficiently manage and distribute resources among startups based on performance metrics."
         },
         {
-            icon: <Award className="h-7 w-7 text-primary-600" />,
+            icon: <Award className="h-7 w-7 text-black-600" />,
             title: "Success Tracking",
             description: "Monitor startup success rates and outcomes with comprehensive tracking tools."
         }
@@ -56,25 +56,25 @@ const LandingPage = () => {
 
     const stats = [
         {
-            icon: <TrendingUp className="h-7 w-7 text-primary-600" />,
+            icon: <TrendingUp className="h-7 w-7 text-black-600" />,
             value: 500,
             label: "Active Incubators",
             suffix: "+"
         },
         {
-            icon: <Users className="h-7 w-7 text-primary-600" />,
+            icon: <Users className="h-7 w-7 text-black-600" />,
             value: 12000,
             label: "Startups Tracked",
             prefix: "+"
         },
         {
-            icon: <Zap className="h-7 w-7 text-primary-600" />,
+            icon: <Zap className="h-7 w-7 text-black-600" />,
             value: 98,
             label: "Customer Satisfaction",
             suffix: "%"
         },
         {
-            icon: <Shield className="h-7 w-7 text-primary-600" />,
+            icon: <Shield className="h-7 w-7 text-black-600" />,
             value: 35,
             label: "Increased Success Rate",
             suffix: "%"
@@ -301,18 +301,18 @@ const LandingPage = () => {
             </section>
 
             {/* Features Section - Improved UI */}
-            <section className="py-28 bg-primary-50 relative overflow-hidden">
+            <section className="py-28 bg-black-50 relative overflow-hidden">
                 {/* Background elements */}
                 <div className="absolute inset-0 z-0 opacity-30">
-                    <div className="absolute right-0 top-0 h-72 w-72 bg-primary-300 rounded-full -mr-32 -mt-32 opacity-50"></div>
-                    <div className="absolute left-0 bottom-0 h-72 w-72 bg-primary-300 rounded-full -ml-32 -mb-32 opacity-50"></div>
+                    <div className="absolute right-0 top-0 h-72 w-72 bg-black-300 rounded-full -mr-32 -mt-32 opacity-50"></div>
+                    <div className="absolute left-0 bottom-0 h-72 w-72 bg-black-300 rounded-full -ml-32 -mb-32 opacity-50"></div>
                 </div>
 
                 <div className="container mx-auto px-8 relative z-10">
                     <div className="text-center mb-24 max-w-3xl mx-auto">
-                        <span className="text-primary-600 font-semibold uppercase tracking-wider text-sm">Powerful capabilities</span>
+                        <span className="text-black-600 font-semibold uppercase tracking-wider text-sm">Powerful capabilities</span>
                         <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-6 text-gray-900 leading-tight">Everything You Need to Drive Growth</h2>
-                        <div className="h-1.5 w-24 bg-primary-500 mx-auto mb-8"></div>
+                        <div className="h-1.5 w-24 bg-black-500 mx-auto mb-8"></div>
                         <p className="text-xl text-gray-600 leading-relaxed">
                             Our comprehensive suite of tools enables you to manage, track, and grow your startup portfolio with data-driven insights.
                         </p>
@@ -325,19 +325,19 @@ const LandingPage = () => {
                                 className="group relative"
                             >
                                 {/* Feature card with hover effect - improved design */}
-                                <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2 group-hover:bg-gradient-to-br from-white to-primary-50 h-full border border-gray-100">
+                                <div className="bg-white rounded-xl shadow-lg p-8 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2 group-hover:bg-gradient-to-br from-white to-black-50 h-full border border-gray-100">
                                     {/* Icon container - improved design */}
-                                    <div className="bg-primary-50 group-hover:bg-white w-16 h-16 rounded-xl flex items-center justify-center mb-7 transition-all duration-300 group-hover:shadow-md border border-primary-100 group-hover:border-primary-200">
-                                        <div className="text-primary-600">
+                                    <div className="bg-black-50 group-hover:bg-white w-16 h-16 rounded-xl flex items-center justify-center mb-7 transition-all duration-300 group-hover:shadow-md border border-black-100 group-hover:border-black-200">
+                                        <div className="text-black-600">
                                             {feature.icon}
                                         </div>
                                     </div>
-                                    <h3 className="text-xl font-bold mb-4 text-gray-900 group-hover:text-primary-700 transition-colors duration-300">{feature.title}</h3>
+                                    <h3 className="text-xl font-bold mb-4 text-gray-900 group-hover:text-black-700 transition-colors duration-300">{feature.title}</h3>
                                     <p className="text-gray-600 leading-relaxed">{feature.description}</p>
 
                                     {/* Learn more link - improved design */}
-                                    <div className="mt-6 pt-3 border-t border-gray-100 group-hover:border-primary-100">
-                                        <a href="#" className="inline-flex items-center text-sm font-medium text-primary-600 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                    <div className="mt-6 pt-3 border-t border-gray-100 group-hover:border-black-100">
+                                        <a href="#" className="inline-flex items-center text-sm font-medium text-black-600 opacity-0 group-hover:opacity-100 transition-all duration-300">
                                             Learn more
                                             <svg className="ml-1.5 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                                 <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
@@ -347,7 +347,7 @@ const LandingPage = () => {
                                 </div>
 
                                 {/* Feature number - improved design */}
-                                <div className="absolute -top-4 -right-4 bg-primary-600 text-white h-10 w-10 rounded-full flex items-center justify-center font-bold text-sm shadow-lg transform transition-transform group-hover:scale-110 group-hover:bg-primary-700">
+                                <div className="absolute -top-4 -right-4 bg-black-600 text-white h-10 w-10 rounded-full flex items-center justify-center font-bold text-sm shadow-lg transform transition-transform group-hover:scale-110 group-hover:bg-black-700">
                                     {index + 1}
                                 </div>
                             </div>
@@ -356,7 +356,7 @@ const LandingPage = () => {
 
                     {/* Added CTA button - improved design */}
                     <div className="text-center mt-20">
-                        <Link to="/register" className="inline-flex items-center px-8 py-4 bg-primary-600 text-black rounded-lg shadow-xl hover:bg-primary-700 transition-all duration-300 font-semibold text-lg border border-primary-500">
+                        <Link to="/register" className="inline-flex items-center px-8 py-4 bg-black-600 text-black rounded-lg shadow-xl hover:bg-black-700 transition-all duration-300 font-semibold text-lg border border-black-500">
                             Explore all features
                             <svg className="ml-3 w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -375,9 +375,9 @@ const LandingPage = () => {
 
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="text-center mb-20 max-w-3xl mx-auto">
-                        <span className="text-primary-600 font-semibold uppercase tracking-wider text-sm">Testimonials</span>
+                        <span className="text-black-600 font-semibold uppercase tracking-wider text-sm">Testimonials</span>
                         <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-4 text-gray-900">Trusted by Leading Incubators</h2>
-                        <div className="h-1 w-20 bg-primary-500 mx-auto mb-6"></div>
+                        <div className="h-1 w-20 bg-black-500 mx-auto mb-6"></div>
                         <p className="text-xl text-gray-600">
                             Discover why incubator managers worldwide choose IncuTrack Pro for their performance tracking needs.
                         </p>
@@ -391,7 +391,7 @@ const LandingPage = () => {
                                 className="bg-white rounded-2xl p-8 shadow-lg relative hover:shadow-xl transition-all duration-300"
                             >
                                 {/* Quote icon */}
-                                <div className="absolute -top-5 -left-5 w-12 h-12 bg-primary-500 rounded-xl flex items-center justify-center shadow-lg transform -rotate-6">
+                                <div className="absolute -top-5 -left-5 w-12 h-12 bg-black-500 rounded-xl flex items-center justify-center shadow-lg transform -rotate-6">
                                     <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd"></path>
                                     </svg>
@@ -411,13 +411,13 @@ const LandingPage = () => {
 
                                 <div className="flex items-center border-t pt-4 border-gray-100">
                                     <div className="flex-shrink-0">
-                                        <div className="w-14 h-14 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-md">
+                                        <div className="w-14 h-14 bg-gradient-to-br from-black-400 to-black-600 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-md">
                                             {testimonial.author.charAt(0)}
                                         </div>
                                     </div>
                                     <div className="ml-4">
                                         <h4 className="font-bold text-gray-900 text-lg">{testimonial.author}</h4>
-                                        <p className="text-primary-600">{testimonial.role}</p>
+                                        <p className="text-black-600">{testimonial.role}</p>
                                     </div>
                                 </div>
                             </div>
@@ -497,7 +497,7 @@ const LandingPage = () => {
                                 <div className="md:w-1/3">
                                     <Link
                                         to="/register"
-                                        className="w-full bg-white text-gray-900 hover:bg-primary-50 px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all duration-300 flex items-center justify-center"
+                                        className="w-full bg-white text-gray-900 hover:bg-black-50 px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all duration-300 flex items-center justify-center"
                                     >
                                         Get Started For Free
                                         <ChevronRight className="ml-2 h-5 w-5" />
@@ -516,20 +516,20 @@ const LandingPage = () => {
             </section>
 
             {/* Enhanced Stats Section */}
-            <section className="py-20 bg-primary-50 relative overflow-hidden">
+            <section className="py-20 bg-black-50 relative overflow-hidden">
                 {/* Background pattern */}
                 <div className="absolute inset-0 opacity-10">
-                    <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary-500 rounded-full blur-3xl"></div>
+                    <div className="absolute -top-24 -right-24 w-96 h-96 bg-black-500 rounded-full blur-3xl"></div>
                     <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-indigo-600 rounded-full blur-3xl"></div>
                 </div>
 
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="text-center mb-16 max-w-3xl mx-auto">
-                        <span className="text-primary-600 font-semibold uppercase tracking-wider text-sm">By The Numbers</span>
+                        <span className="text-black-600 font-semibold uppercase tracking-wider text-sm">By The Numbers</span>
                         <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-4 text-gray-900">
                             Driving Measurable Results
                         </h2>
-                        <div className="h-1 w-20 bg-primary-500 mx-auto mb-6"></div>
+                        <div className="h-1 w-20 bg-black-500 mx-auto mb-6"></div>
                         <p className="text-xl text-gray-600">
                             IncuTrack Pro has helped incubators worldwide achieve remarkable outcomes for their startups.
                         </p>
@@ -542,9 +542,9 @@ const LandingPage = () => {
                                 className="bg-white rounded-xl p-8 shadow-lg relative overflow-hidden hover:scale-105 transition-all duration-300 border border-gray-100 group"
                             >
                                 {/* Accent element */}
-                                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-400 to-primary-600 transform group-hover:h-2 transition-all duration-300"></div>
+                                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-black-400 to-black-600 transform group-hover:h-2 transition-all duration-300"></div>
 
-                                <div className="flex items-center justify-center w-16 h-16 mb-6 bg-primary-50 rounded-lg text-primary-600 mx-auto">
+                                <div className="flex items-center justify-center w-16 h-16 mb-6 bg-black-50 rounded-lg text-black-600 mx-auto">
                                     {stat.icon}
                                 </div>
 

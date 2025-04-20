@@ -122,13 +122,13 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         {/* Sidebar header */}
         <div className="h-16 flex items-center justify-between px-5 border-b border-gray-200 flex-shrink-0">
           <div className="flex items-center space-x-3">
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary-600 to-primary-700 flex items-center justify-center shadow-sm">
+            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-black-600 to-black-700 flex items-center justify-center shadow-sm">
               <span className="text-white font-bold text-base">IP</span>
             </div>
-            <span className="font-semibold text-lg text-gray-900">IncuTrack <span className="font-bold text-primary-600">Pro</span></span>
+            <span className="font-semibold text-lg text-gray-900">IncuTrack <span className="font-bold text-black-600">Pro</span></span>
           </div>
           <button
-            className="p-1.5 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 lg:hidden focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1"
+            className="p-1.5 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 lg:hidden focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-1"
             onClick={toggleSidebar}
             aria-label="Close sidebar"
           >
@@ -149,7 +149,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         className={`
                           w-full flex items-center justify-between px-4 py-2.5 text-sm rounded-lg font-medium text-left
                           ${location.pathname.startsWith(item.path) 
-                            ? 'text-primary-700 bg-primary-50' 
+                            ? 'text-black-700 bg-black-50' 
                             : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'}
                           transition-colors duration-150 group
                         `}
@@ -157,7 +157,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                         aria-expanded={!!expandedItems[item.path]}
                       >
                         <div className="flex items-center">
-                          <span className={`mr-3 flex-shrink-0 w-5 h-5 ${location.pathname.startsWith(item.path) ? 'text-primary-600' : 'text-gray-500 group-hover:text-gray-700'} transition-colors duration-150`}>
+                          <span className={`mr-3 flex-shrink-0 w-5 h-5 ${location.pathname.startsWith(item.path) ? 'text-black-600' : 'text-gray-500 group-hover:text-gray-700'} transition-colors duration-150`}>
                             {item.icon}
                           </span>
                           {item.title}
@@ -181,7 +181,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                                   block pl-4 pr-3 py-1.5 text-sm rounded-md relative
                                   before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:h-1 before:w-1 before:rounded-full before:bg-gray-300
                                   ${isActive 
-                                    ? 'text-primary-700 font-medium bg-primary-50 before:bg-primary-600' 
+                                    ? 'text-black-700 font-medium bg-black-50 before:bg-black-600' 
                                     : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900 before:hover:bg-gray-400'}
                                   transition-all duration-150
                                 `}
@@ -199,12 +199,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       className={({ isActive }) => `
                         flex items-center px-4 py-2.5 text-sm rounded-lg font-medium group
                         ${isActive 
-                          ? 'text-primary-700 bg-primary-50' 
+                          ? 'text-black-700 bg-black-50' 
                           : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'}
                         transition-colors duration-150
                       `}
                     >
-                      {/* <span className={`mr-3 flex-shrink-0 w-5 h-5 ${isActive ? 'text-primary-600' : 'text-gray-500 group-hover:text-gray-700'} transition-colors duration-150`}>
+                      {/* <span className={`mr-3 flex-shrink-0 w-5 h-5 ${isActive ? 'text-black-600' : 'text-gray-500 group-hover:text-gray-700'} transition-colors duration-150`}>
                         {item.icon}
                       </span> */}
                       {item.title}
@@ -227,12 +227,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                       className={({ isActive }) => `
                         flex items-center px-4 py-2.5 text-sm rounded-lg font-medium group
                         ${isActive 
-                          ? 'text-primary-700 bg-primary-50' 
+                          ? 'text-black-700 bg-black-50' 
                           : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'}
                         transition-colors duration-150
                       `}
                     >
-                      {/* <span className={`mr-3 flex-shrink-0 w-5 h-5 ${isActive ? 'text-primary-600' : 'text-gray-500 group-hover:text-gray-700'} transition-colors duration-150`}>
+                      {/* <span className={`mr-3 flex-shrink-0 w-5 h-5 ${isActive ? 'text-black-600' : 'text-gray-500 group-hover:text-gray-700'} transition-colors duration-150`}>
                         {item.icon}
                       </span> */}
                       {item.title}
@@ -244,14 +244,14 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             
             {/* Pro upgrade banner */}
             <div className="mt-8 mx-3">
-              <div className="bg-gradient-to-br from-primary-600 to-primary-800 rounded-xl p-5 text-white shadow-lg relative overflow-hidden">
+              <div className="bg-gradient-to-br from-black-600 to-black-800 rounded-xl p-5 text-white shadow-lg relative overflow-hidden">
                 <div className="relative z-10">
                   <div className="flex items-center mb-2">
                     <AlertCircle className="h-5 w-5 mr-2 flex-shrink-0" />
                     <h4 className="font-semibold text-sm">Upgrade to Pro</h4>
                   </div>
-                  <p className="text-xs text-primary-100 mb-4 leading-relaxed">Unlock advanced features, reporting, and priority support.</p>
-                  <button className="w-full flex items-center justify-center text-xs font-medium bg-white text-primary-700 px-3 py-2 rounded-md hover:bg-primary-50 transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-700">
+                  <p className="text-xs text-black-100 mb-4 leading-relaxed">Unlock advanced features, reporting, and priority support.</p>
+                  <button className="w-full flex items-center justify-center text-xs font-medium bg-white text-black-700 px-3 py-2 rounded-md hover:bg-black-50 transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black-700">
                     Upgrade Now
                     <ExternalLink size={14} className="ml-1.5" />
                   </button>
@@ -265,12 +265,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           
         {/* User info - fixed at bottom */}
         <div className="p-4 border-t border-gray-200 flex-shrink-0">
-          <button className="w-full bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-colors duration-200 group focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1">
+          <button className="w-full bg-gray-50 rounded-lg p-3 hover:bg-gray-100 transition-colors duration-200 group focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-1">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <div className="h-9 w-9 rounded-full bg-primary-100 border border-primary-200 shadow-sm flex items-center justify-center overflow-hidden">
+                <div className="h-9 w-9 rounded-full bg-black-100 border border-black-200 shadow-sm flex items-center justify-center overflow-hidden">
                   {/* Replace with actual user avatar/initials */}
-                  <span className="text-primary-700 font-medium">JD</span>
+                  <span className="text-black-700 font-medium">JD</span>
                 </div>
               </div>
               <div className="ml-3 flex-1 text-left">

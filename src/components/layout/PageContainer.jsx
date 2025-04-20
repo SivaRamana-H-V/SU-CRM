@@ -73,7 +73,7 @@ const PageContainer = ({ children }) => {
                         ) : (
                           <Link 
                             to={crumb.url} 
-                            className="hover:text-primary-600 hover:underline transition-colors duration-200 flex items-center"
+                            className="hover:text-black-600 hover:underline transition-colors duration-200 flex items-center"
                           >
                             {index === 0 && <Home size={12} className="mr-1.5" />}
                             {crumb.label}
